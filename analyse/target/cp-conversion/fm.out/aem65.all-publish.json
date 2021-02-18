@@ -1,0 +1,11 @@
+{
+  "id":"com.aem65:aem65.analyse:slingosgifeature:publish:1.0.0-SNAPSHOT",
+  "configurations":  {
+    "org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl":    {
+      "resource.resolver.mapping":[
+        "/content/aem65/&lt;/",
+        "/:/"
+      ]
+    }
+  }
+}

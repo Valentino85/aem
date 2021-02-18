@@ -1,0 +1,40 @@
+Manifest-Version: 1.0
+Bundle-Category: AEM Site
+Bundle-Description: Core bundle for AEM Site
+Bundle-ManifestVersion: 2
+Bundle-Name: AEM Site - Core
+Bundle-SymbolicName: aem65.core
+Bundle-Version: 1.0.0.SNAPSHOT
+Export-Package: com.aem65.core.filters;version="1.0";uses:="javax.serv
+ let",com.aem65.core.listeners;version="1.0";uses:="org.osgi.service.e
+ vent",com.aem65.core.models;version="1.0";uses:="javax.annotation,org
+ .apache.sling.api.resource,org.apache.sling.models.annotations,org.ap
+ ache.sling.models.annotations.injectorspecific",com.aem65.core.schedu
+ lers;version="1.0",com.aem65.core.servlets;version="1.0";uses:="javax
+ .servlet,org.apache.sling.api,org.apache.sling.api.servlets"
+Import-Package: javax.annotation;version="0.0.0",com.aem65.core.filter
+ s;version="[1.0,2)",com.aem65.core.listeners;version="[1.0,2)",com.ae
+ m65.core.schedulers;version="[1.0,2)",com.aem65.core.servlets;version
+ ="[1.0,2)",com.day.cq.wcm.api;version="[1.29,2)",javax.servlet;versio
+ n="[3.1,4)",org.apache.sling.api;version="[2.3,3)",org.apache.sling.a
+ pi.request;version="[2.4,3)",org.apache.sling.api.resource;version="[
+ 2.12,3)",org.apache.sling.api.servlets;version="[2.3,3)",org.apache.s
+ ling.models.annotations;version="[1.5,2)",org.apache.sling.models.ann
+ otations.injectorspecific;version="[1.1,2)",org.apache.sling.settings
+ ;version="[1.3,2)",org.osgi.service.event;version="[1.4,2)",org.slf4j
+ ;version="[1.7,2)"
+Provide-Capability: osgi.service;objectClass:List<String>="java.lang.R
+ unnable",osgi.service;objectClass:List<String>="javax.servlet.Filter"
+ ;uses:="javax.servlet",osgi.service;objectClass:List<String>="javax.s
+ ervlet.Servlet";uses:="javax.servlet",osgi.service;objectClass:List<S
+ tring>="org.osgi.service.event.EventHandler";uses:="org.osgi.service.
+ event"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compo
+ nent)(version>=1.4.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.e
+ e=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/com.aem65.core.filters.LoggingFilter.xml,O
+ SGI-INF/com.aem65.core.listeners.SimpleResourceListener.xml,OSGI-INF/
+ com.aem65.core.schedulers.SimpleScheduledTask.xml,OSGI-INF/com.aem65.
+ core.servlets.SimpleServlet.xml
+Sling-Model-Classes: com.aem65.core.models.HelloWorldModel
+

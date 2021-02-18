@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.4
+Build-Jdk-Spec: 11
+Implementation-Title: AEM Site - UI apps
+Implementation-Version: 1.0.0-SNAPSHOT
+Content-Package-Type: application
+Content-Package-Id: com.aem65:aem65.ui.apps:1.0.0-SNAPSHOT
+Content-Package-Description: UI apps package for AEM Site
+Content-Package-Roots: /apps/aem65/clientlibs,/apps/aem65/components,/ap
+ ps/aem65/i18n
+Import-Package: com.aem65.core.models;version="[1.0.0,2.0.0)",org.apache
+ .sling.scripting.sightly;version="[2.0.0,3.0.0)"
+

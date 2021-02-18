@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>AEM Site - UI apps</comment>
+<entry key="allowIndexDefinitions">false</entry>
+<entry key="acHandling">merge</entry>
+<entry key="created">2021-02-18T21:31:30.176Z</entry>
+<entry key="groupId">com.aem65</entry>
+<entry key="description">UI apps package for AEM Site</entry>
+<entry key="version">1.0.0-SNAPSHOT</entry>
+<entry key="packageType">application</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="cloudManagerTarget">none</entry>
+<entry key="name">aem65.ui.apps</entry>
+<entry key="artifactId">aem65.ui.apps</entry>
+<entry key="group">com.aem65</entry>
+</properties>

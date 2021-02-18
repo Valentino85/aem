@@ -1,0 +1,38 @@
+{
+  "id":"com.aem65:aem65.analyse:slingosgifeature:1.0.0-SNAPSHOT",
+  "bundles":[
+    {
+      "id":"com.aem65:aem65.core:1.0.0-SNAPSHOT",
+      "start-order":"20"
+    }
+  ],
+  "configurations":  {
+    "org.apache.sling.commons.log.LogManager.factory.config~aem65":    {
+      "org.apache.sling.commons.log.pattern":"{0,date,yyyy-MM-dd HH:mm:ss.SSS} *{4}* [{2}] {3} {5}",
+      "org.apache.sling.commons.log.names":[
+        "com.aem65"
+      ],
+      "org.apache.sling.commons.log.level":"info",
+      "org.apache.sling.commons.log.file":"logs/error.log",
+      "org.apache.sling.commons.log.additiv":"false"
+    }
+  },
+  "content-packages:ARTIFACTS|true":[
+    "com.aem65:aem65.ui.apps:zip:cp2fm-converted:1.0.0-SNAPSHOT",
+    "com.aem65:aem65.ui.config:zip:cp2fm-converted:1.0.0-SNAPSHOT",
+    "com.aem65:aem65.ui.content:zip:cp2fm-converted:1.0.0-SNAPSHOT",
+    "com.aem65:aem65.all:zip:cp2fm-converted:1.0.0-SNAPSHOT"
+  ],
+  "api-regions:JSON|false":[
+    {
+      "name":"global",
+      "exports":[
+        "com.aem65.core.filters",
+        "com.aem65.core.listeners",
+        "com.aem65.core.models",
+        "com.aem65.core.schedulers",
+        "com.aem65.core.servlets"
+      ]
+    }
+  ]
+}

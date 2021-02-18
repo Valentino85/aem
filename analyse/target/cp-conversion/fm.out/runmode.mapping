@@ -1,0 +1,7 @@
+#File edited by the Apache Sling Content Package to Sling Feature converter
+#Thu Feb 18 22:31:40 CET 2021
+prod=aem65.all-prod.json
+stage=aem65.all-stage.json
+author=aem65.all-author.json
+publish=aem65.all-publish.json
+(default)=aem65.all.json

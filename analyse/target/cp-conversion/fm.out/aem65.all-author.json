@@ -1,0 +1,11 @@
+{
+  "id":"com.aem65:aem65.analyse:slingosgifeature:author:1.0.0-SNAPSHOT",
+  "configurations":  {
+    "com.day.cq.wcm.mobile.core.impl.MobileEmulatorProvider~aem65":    {
+      "mobile.resourceTypes":[
+        "aem65/components/page"
+      ],
+      "README":"Indicate which page resource types should display the mobile emulators."
+    }
+  }
+}

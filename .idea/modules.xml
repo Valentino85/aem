@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/aem65.iml" filepath="$PROJECT_DIR$/aem65.iml" />
+      <module fileurl="file://$PROJECT_DIR$/all/aem65.all.iml" filepath="$PROJECT_DIR$/all/aem65.all.iml" />
+      <module fileurl="file://$PROJECT_DIR$/analyse/aem65.analyse.iml" filepath="$PROJECT_DIR$/analyse/aem65.analyse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/aem65.core.iml" filepath="$PROJECT_DIR$/core/aem65.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dispatcher/aem65.dispatcher.cloud.iml" filepath="$PROJECT_DIR$/dispatcher/aem65.dispatcher.cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/it.tests/aem65.it.tests.iml" filepath="$PROJECT_DIR$/it.tests/aem65.it.tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui.apps/aem65.ui.apps.iml" filepath="$PROJECT_DIR$/ui.apps/aem65.ui.apps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui.apps.structure/aem65.ui.apps.structure.iml" filepath="$PROJECT_DIR$/ui.apps.structure/aem65.ui.apps.structure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui.config/aem65.ui.config.iml" filepath="$PROJECT_DIR$/ui.config/aem65.ui.config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui.content/aem65.ui.content.iml" filepath="$PROJECT_DIR$/ui.content/aem65.ui.content.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui.frontend/aem65.ui.frontend.iml" filepath="$PROJECT_DIR$/ui.frontend/aem65.ui.frontend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui.tests/aem65.ui.tests.iml" filepath="$PROJECT_DIR$/ui.tests/aem65.ui.tests.iml" />
+    </modules>
+  </component>
+</project>
