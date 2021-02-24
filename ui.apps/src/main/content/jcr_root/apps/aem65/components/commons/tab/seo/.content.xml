@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Seo"
+          sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+    <items jcr:primaryType="nt:unstructured">
+        <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+            <items jcr:primaryType="nt:unstructured">
+                <section1
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="SEO Page Settings"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                    <items jcr:primaryType="nt:unstructured">
+                        <canonical
+                                cq:showOnCreate="{Boolean}true"
+                                cq:hideOnEdit="{Boolean}false"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Canonical Url"
+                                fieldDescription="If not contributed, the canonical metatag will be filled with the URL of the page, otherwise overwritten by the value specified in this field. USE ABSOLUTE LINK!"
+                                name="./canonical"/>
+                        <keywords
+                                cq:showOnCreate="{Boolean}true"
+                                cq:hideOnEdit="{Boolean}false"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Keywords"
+                                name="./keywords"/>
+                        <excludeFromSitemap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                text="Exclude from sitemap.xml"
+                                name="./excludeFromSitemap"
+                                value="{Boolean}true"
+                                uncheckedValue="{Boolean}false"/>
+                    </items>
+                </section1>
+                <section2
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="ROBOTS Settings"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                    <items jcr:primaryType="nt:unstructured">
+                        <noIndex
+                                cq:showOnCreate="{Boolean}true"
+                                cq:hideOnEdit="{Boolean}false"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                text="No Index"
+                                name="./noIndex"
+                                value="{Boolean}true"
+                                uncheckedValue="{Boolean}false"/>
+                        <noFollow
+                                cq:showOnCreate="{Boolean}true"
+                                cq:hideOnEdit="{Boolean}false"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                text="No Follow"
+                                name="./noFollow"
+                                value="{Boolean}true"
+                                uncheckedValue="{Boolean}false"/>
+                        <noArchive
+                                cq:showOnCreate="{Boolean}true"
+                                cq:hideOnEdit="{Boolean}false"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                text="No Archive"
+                                name="./noArchive"
+                                value="{Boolean}true"
+                                uncheckedValue="{Boolean}false"/>
+                        <noImageIndex
+                                cq:showOnCreate="{Boolean}true"
+                                cq:hideOnEdit="{Boolean}false"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                text="No Image Index"
+                                name="./noImageIndex"
+                                value="{Boolean}true"
+                                uncheckedValue="{Boolean}false"/>
+                        <noCache
+                                cq:showOnCreate="{Boolean}true"
+                                cq:hideOnEdit="{Boolean}false"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                text="No Cache"
+                                name="./noCache"
+                                value="{Boolean}true"
+                                uncheckedValue="{Boolean}false"/>
+                        <noSnippet
+                                cq:showOnCreate="{Boolean}true"
+                                cq:hideOnEdit="{Boolean}false"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                text="No Snippet"
+                                name="./noSnippet"
+                                value="{Boolean}true"
+                                uncheckedValue="{Boolean}false"/>
+                        <noTranslate
+                                cq:showOnCreate="{Boolean}true"
+                                cq:hideOnEdit="{Boolean}false"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                text="No Translate"
+                                name="./noTranslate"
+                                value="{Boolean}true"
+                                uncheckedValue="{Boolean}false"/>
+                    </items>
+                </section2>
+            </items>
+        </column>
+    </items>
+</jcr:root>

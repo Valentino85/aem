@@ -9,6 +9,6 @@ Content-Package-Description: UI content package for AEM Site
 Content-Package-Dependencies: com.aem65:aem65.ui.apps:1.0.0-SNAPSHOT
 Content-Package-Dependencies-Locations: com.aem65:aem65.ui.apps:1.0.0-SN
  APSHOT=maven:com.aem65:aem65.ui.apps:1.0.0-SNAPSHOT:zip
-Content-Package-Roots: /conf/aem65,/content/aem65,/content/dam/aem65,/co
- ntent/experience-fragments/aem65
+Content-Package-Roots: /conf/aem65,/content/dam/aem65,/content/experienc
+ e-fragments/aem65
 

@@ -35,6 +35,7 @@ Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compo
 Service-Component: OSGI-INF/com.aem65.core.filters.LoggingFilter.xml,O
  SGI-INF/com.aem65.core.listeners.SimpleResourceListener.xml,OSGI-INF/
  com.aem65.core.schedulers.SimpleScheduledTask.xml,OSGI-INF/com.aem65.
- core.servlets.SimpleServlet.xml
+ core.servlets.ProvaServlet.xml,OSGI-INF/com.aem65.core.servlets.Simpl
+ eServlet.xml
 Sling-Model-Classes: com.aem65.core.models.HelloWorldModel
 

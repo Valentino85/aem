@@ -5,7 +5,7 @@
 <entry key="allowIndexDefinitions">false</entry>
 <entry key="acHandling">merge</entry>
 <entry key="dependencies-locations">com.aem65:aem65.ui.apps:1.0.0-SNAPSHOT=maven:com.aem65:aem65.ui.apps:1.0.0-SNAPSHOT:zip</entry>
-<entry key="created">2021-02-18T21:31:32.720Z</entry>
+<entry key="created">2021-02-24T21:59:15.684Z</entry>
 <entry key="groupId">com.aem65</entry>
 <entry key="description">UI content package for AEM Site</entry>
 <entry key="version">1.0.0-SNAPSHOT</entry>

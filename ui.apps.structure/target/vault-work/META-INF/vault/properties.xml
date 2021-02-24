@@ -4,7 +4,7 @@
 <comment>AEM Site - Repository Structure Package</comment>
 <entry key="cloudManagerTarget">none</entry>
 <entry key="allowIndexDefinitions">false</entry>
-<entry key="created">2021-02-18T21:31:26.235Z</entry>
+<entry key="created">2021-02-24T21:59:06.828Z</entry>
 <entry key="groupId">com.aem65</entry>
 <entry key="name">aem65.ui.apps.structure</entry>
 <entry key="description">Empty package that defines the structure of the Adobe Experience Manager repository the Code packages in this project deploy into.

@@ -1,4 +1,4 @@
-# File created on Thu Feb 18 22:31:40 CET 2021 by the Apache Sling Content Package to Sling Feature converter
+# File created on Wed Feb 24 22:59:27 CET 2021 by the Apache Sling Content Package to Sling Feature converter
 # content-package path, content-package ID, content-package type, content-package parent ID, path in parent content-package, absolute path
 /Users/viannacco/Projects/aem/all/target/aem65.all-1.0.0-SNAPSHOT.zip,com.aem65:aem65.all:1.0.0-SNAPSHOT,CONTAINER,,,
 /Users/viannacco/Projects/aem/all/target/aem65.all-1.0.0-SNAPSHOT.zip,com.aem65:aem65.ui.apps:1.0.0-SNAPSHOT,APPLICATION,com.aem65:aem65.all:1.0.0-SNAPSHOT,/jcr_root/apps/aem65-packages/application/install/aem65.ui.apps-1.0.0-SNAPSHOT.zip,/Users/viannacco/Projects/aem/all/target/aem65.all-1.0.0-SNAPSHOT.zip!/jcr_root/apps/aem65-packages/application/install/aem65.ui.apps-1.0.0-SNAPSHOT.zip

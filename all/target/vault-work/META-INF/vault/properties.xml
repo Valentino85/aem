@@ -4,7 +4,7 @@
 <comment>AEM Site - All</comment>
 <entry key="cloudManagerTarget">all</entry>
 <entry key="allowIndexDefinitions">false</entry>
-<entry key="created">2021-02-18T21:31:33.163Z</entry>
+<entry key="created">2021-02-24T21:59:16.561Z</entry>
 <entry key="groupId">com.aem65</entry>
 <entry key="name">aem65.all</entry>
 <entry key="description">All content package for AEM Site</entry>

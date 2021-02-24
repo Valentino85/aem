@@ -1,4 +1,5 @@
 com/aem65/core/servlets/package-info.class
+com/aem65/core/servlets/ProvaServlet.class
 com/aem65/core/models/package-info.class
 com/aem65/core/models/HelloWorldModel.class
 com/aem65/core/listeners/package-info.class

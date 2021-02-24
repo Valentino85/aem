@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Basic"
+    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+    <items jcr:primaryType="nt:unstructured">
+        <column
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+            <items jcr:primaryType="nt:unstructured">
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Title and Tags"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                    <items jcr:primaryType="nt:unstructured">
+                        <title
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Title"
+                            name="./jcr:title"
+                            renderReadOnly="{Boolean}true"
+                            required="{Boolean}true">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-msm-lockable="jcr:title"/>
+                        </title>
+                        <pageName
+                            cq:hideOnEdit="{Boolean}true"
+                            cq:showOnCreate="{Boolean}true"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Name"
+                            name="pageName"
+                            validation="admin.pagename"/>
+                        <msmConfigEndpoint
+                            granite:class="msm-config-endpoint"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                            value="${empty param.item ? requestPathInfo.suffix : param.item }"/>
+                        <tags
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                            allowBulkEdit="{Boolean}true"
+                            autocreateTag="{Boolean}true"
+                            fieldLabel="Tags"
+                            multiple="{Boolean}true"
+                            name="./cq:tags">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-msm-lockable="cq:tags"/>
+                        </tags>
+                        <tagsShowOnCreate
+                            cq:hideOnEdit="{Boolean}true"
+                            cq:showOnCreate="{Boolean}true"
+                            granite:comment="Handled by a custom POST servlet for the Create Page case"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                            fieldLabel="Tags"
+                            multiple="{Boolean}true"
+                            name="./cq:tags"/>
+                        <charset
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                            allowBulkEdit="{Boolean}true"
+                            ignoreData="{Boolean}true"
+                            name="_charset_"
+                            value="utf-8"/>
+                    </items>
+                </title>
+                <moreTitles
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="More Titles and Description"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                    <items jcr:primaryType="nt:unstructured">
+                        <pageTitle
+                            cq:showOnCreate="{Boolean}true"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Page Title"
+                            name="./pageTitle"
+                            renderReadOnly="{Boolean}true">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                allowBulkEdit="{Boolean}true"
+                                cq-msm-lockable="pageTitle"/>
+                        </pageTitle>
+                        <description
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                            fieldLabel="Description"
+                            name="./jcr:description"
+                            renderReadOnly="{Boolean}true">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                allowBulkEdit="{Boolean}true"
+                                cq-msm-lockable="jcr:description"/>
+                        </description>
+                        <hideBreadcrumb
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            cq:showOnCreate="{Boolean}true"
+                            text="Hide Breadcrumb"
+                            renderReadOnly="{Boolean}true"
+                            name="./hideBreadcrumb"
+                            value="{Boolean}true"
+                            uncheckedValue="{Boolean}false"/>
+                        <isBackToTopActive
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                cq:showOnCreate="{Boolean}true"
+                                text="Active Back To Top"
+                                renderReadOnly="{Boolean}true"
+                                name="./backToTopActive"
+                                value="{Boolean}true"
+                                uncheckedValue="{Boolean}false"/>
+                        <customFooter
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                cq:showOnCreate="{Boolean}true"
+                                text="Check to configure custom Footer for this page"
+                                name="./customFooter"
+                                value="{Boolean}true"
+                                uncheckedValue="{Boolean}false"/>
+                    </items>
+                </moreTitles>
+                <onOffTime
+                    cq:showOnCreate="{Boolean}false"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="On/Off Time"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                    <items jcr:primaryType="nt:unstructured">
+                        <onDate
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                            displayedFormat="MMMM DD, YYYY hh:mm a"
+                            displayTimezoneMessage="{Boolean}true"
+                            fieldLabel="On Time"
+                            name="./onTime"
+                            renderReadOnly="{Boolean}true"
+                            type="datetime">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                allowBulkEdit="{Boolean}true"
+                                cq-msm-lockable="onTime"/>
+                        </onDate>
+                        <offDate
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                            displayedFormat="MMMM DD, YYYY hh:mm a"
+                            displayTimezoneMessage="{Boolean}true"
+                            fieldLabel="Off Time"
+                            name="./offTime"
+                            renderReadOnly="{Boolean}true"
+                            type="datetime">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                allowBulkEdit="{Boolean}true"
+                                cq-msm-lockable="offTime"/>
+                        </offDate>
+                    </items>
+                </onOffTime>
+                <vanityUrl
+                    cq:showOnCreate="{Boolean}false"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Vanity URL"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                    <items jcr:primaryType="nt:unstructured">
+                        <vanityPath
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                            cq-msm-lockable="sling:vanityPath"
+                            fieldLabel="Vanity URL"
+                            renderReadOnly="{Boolean}true">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-msm-lockable="sling:vanityPath"/>
+                            <field
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                name="./sling:vanityPath"
+                                required="{Boolean}true"/>
+                        </vanityPath>
+                        <redirectVanityURL
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            name="./sling:redirect"
+                            renderReadOnly="{Boolean}true"
+                            text="Redirect Vanity URL"
+                            value="true">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-msm-lockable="./sling:redirect"/>
+                        </redirectVanityURL>
+                    </items>
+                </vanityUrl>
+            </items>
+        </column>
+    </items>
+</jcr:root>

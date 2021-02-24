@@ -4,7 +4,7 @@
 <comment>AEM Site - UI config</comment>
 <entry key="cloudManagerTarget">none</entry>
 <entry key="allowIndexDefinitions">false</entry>
-<entry key="created">2021-02-18T21:31:33.027Z</entry>
+<entry key="created">2021-02-24T21:59:16.211Z</entry>
 <entry key="groupId">com.aem65</entry>
 <entry key="name">aem65.ui.config</entry>
 <entry key="description">UI config package for AEM Site</entry>

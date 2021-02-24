@@ -2,5 +2,6 @@
 <workspaceFilter version="1.0">
     <filter root="/apps/aem65/clientlibs"/>
     <filter root="/apps/aem65/components"/>
+    <filter root="/apps/aem65/templates"/>
     <filter root="/apps/aem65/i18n"/>
 </workspaceFilter>
